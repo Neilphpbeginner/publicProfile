@@ -1,29 +1,25 @@
 import React, { Component } from "react";
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { styles } from "./styles";
 import { withStyles } from "@material-ui/core/styles";
-
-const styles = {
-  root: {
-    flexGrow: 1
-  }
-};
+import PropTypes from "prop-types";
+import NavBar from "./NavBar";
 
 class About extends Component {
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <AppBar>
-          <Toolbar>
-            <Typography noWrap align="center" variant="h6">
-              {" "}
-              Hello
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <NavBar />
+        <div className={classes.content}>
+          <div className={classes.toolbar}>About</div>
+        </div>
       </div>
     );
   }
 }
+
+About.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(styles)(About);
