@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -51,21 +51,15 @@ class NavBar extends Component {
           >
             <div className={classes.toolbar} />
             <MenuList>
-              <MenuItem>
-                <Link className={classes.link} to="/">
-                  Home
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link className={classes.link} to="/about">
-                  About
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link className={classes.link} to="/contact">
-                  Contact Me
-                </Link>
-              </MenuItem>
+              <NavLink to="/" className={classes.link}>
+                <MenuItem>Home</MenuItem>
+              </NavLink>
+              <NavLink to="/about" className={classes.link}>
+                <MenuItem>About</MenuItem>
+              </NavLink>
+              <NavLink to="/contact" className={classes.link}>
+                <MenuItem>Contact Me</MenuItem>
+              </NavLink>
             </MenuList>
           </Drawer>
         </Paper>
