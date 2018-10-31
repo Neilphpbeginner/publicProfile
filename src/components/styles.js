@@ -8,5 +8,13 @@ export const styles = theme => ({
     paddingTop: theme.spacing.unit * 11,
     padding: theme.spacing.unit * 5
   },
-  toolbar: theme.mixins.toolbar
+  toolbar: theme.mixins.toolbar,
+  appBar: {
+    zIndex: theme.zIndex.drawer + 1
+  },
+  aboutWidth: {
+    display: "flex",
+    width: theme.zIndex.drawer + 120,
+    height: 35
+  }
 });

@@ -3,9 +3,11 @@ import { BrowserRouter, Route } from "react-router-dom";
 import {
   createMuiTheme,
   MuiThemeProvider,
-  withStyles
+  withStyles,
+  WithTheme
 } from "@material-ui/core/styles";
 import red from "@material-ui/core/colors/red";
+import { styles } from "./styles";
 import Home from "./Home";
 import About from "./About";
 import "./App.css";
@@ -17,23 +19,19 @@ const theme = createMuiTheme({
   }
 });
 
-const styles = theme => ({});
-
 console.log(theme);
 class App extends Component {
   render() {
     return (
-      <div>
-        <MuiThemeProvider theme={theme}>
-          <BrowserRouter>
-            <div>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={ContactPage} />
-            </div>
-          </BrowserRouter>
-        </MuiThemeProvider>
-      </div>
+      <BrowserRouter>
+        <div>
+          <MuiThemeProvider theme={theme}>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={ContactPage} />
+          </MuiThemeProvider>
+        </div>
+      </BrowserRouter>
     );
   }
 }
