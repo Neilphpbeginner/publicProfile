@@ -14,7 +14,10 @@ export const styles = theme => ({
   },
   aboutWidth: {
     display: "flex",
-    width: theme.zIndex.drawer + 120,
+    width: theme.zIndex.drawer,
     height: 35
+  },
+  link: {
+    textDecoration: "none"
   }
 });

@@ -3,7 +3,7 @@ import { styles } from "./styles";
 import { withStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 import NavBar from "./NavBar";
-import { Typography, AppBar, Toolbar } from "@material-ui/core";
+import { Typography, AppBar } from "@material-ui/core";
 
 class About extends Component {
   render() {
