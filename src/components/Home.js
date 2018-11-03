@@ -5,21 +5,21 @@ import Proptypes from "prop-types";
 import NavBar from "./NavBar";
 
 class Home extends Component {
-  render() {
-    const { classes } = this.props;
-    return (
-      <div className={classes.root}>
-        <NavBar />
-        <div className={classes.content}>
-          <div className={classes.toolbar}>Home</div>
-        </div>
-      </div>
-    );
-  }
+    render() {
+        const { classes } = this.props;
+        return (
+            <div className={classes.root}>
+                <NavBar />
+                <div className={classes.content}>
+                    Home
+                </div>
+            </div>
+        );
+    }
 }
 
 Home.Proptypes = {
-  classes: Proptypes.object.isRequired
+    classes: Proptypes.object.isRequired
 };
 
 export default withStyles(styles)(Home);
