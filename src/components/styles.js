@@ -23,11 +23,14 @@ export const styles = theme => ({
     cvHeading: {
         textAlign: 'center',
     },
-    cvlinks: {
+    cvLinks: {
         textAlign: 'center',
-        marginLeft: 80,
+        marin: 700
     },
     link: {
         textDecoration: 'none'
+    },
+    profileGitHub: {
+        float: 'right'
     }
 });
