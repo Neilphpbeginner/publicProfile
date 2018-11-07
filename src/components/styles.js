@@ -1,4 +1,4 @@
-const drawerWidth = 200;
+const drawerWidth = 120;
 
 export const styles = theme => ({
     root: {
@@ -23,14 +23,16 @@ export const styles = theme => ({
     cvHeading: {
         textAlign: 'center',
     },
-    cvLinks: {
-        textAlign: 'center',
-        marin: 700
-    },
     link: {
         textDecoration: 'none'
     },
     profileGitHub: {
         float: 'right'
+    },
+    spaceBetweenIcons: {
+        padding: 7
+    },
+    listItems: {
+        paddingLeft: 65
     }
 });
