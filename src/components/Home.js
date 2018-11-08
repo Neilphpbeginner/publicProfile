@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { styles } from "./styles";
 import Proptypes from "prop-types";
 import NavBar from "./NavBar";
+import { Grid } from "@material-ui/core";
 
 class Home extends Component {
     render() {

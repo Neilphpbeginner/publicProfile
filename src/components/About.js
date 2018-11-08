@@ -84,7 +84,6 @@ class About extends Component {
                         </Typography>
                     </div>
                 </div>
-
             </div >
         );
 

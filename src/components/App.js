@@ -6,19 +6,23 @@ import Home from "./Home";
 import About from "./About";
 import ContactPage from "./ContactPage";
 import "./App.css";
+import { Grid } from "@material-ui/core";
 
 class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={ContactPage} />
-        </div>
-      </BrowserRouter>
-    );
-  }
+    render() {
+        const { classes } = this.props
+        return (
+            < BrowserRouter >
+                <div>
+                    <Grid className={classes.root}>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={ContactPage} />
+                    </Grid>
+                </div>
+            </BrowserRouter >
+        );
+    }
 }
 
 export default withStyles(styles)(App);
