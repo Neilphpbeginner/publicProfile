@@ -14,7 +14,7 @@ class App extends Component {
         return (
             < BrowserRouter >
                 <div>
-                    <Grid className={classes.root}>
+                    <Grid>
                         <Route exact path="/" component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/contact" component={ContactPage} />

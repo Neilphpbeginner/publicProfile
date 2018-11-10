@@ -3,18 +3,20 @@ import { withStyles } from "@material-ui/core/styles";
 import { styles } from "./styles";
 import Proptypes from "prop-types";
 import NavBar from "./NavBar";
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 class Home extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div className={classes.root}>
+            <Grid className={classes.root}>
                 <NavBar />
-                <div className={classes.content}>
-                    Home
-                </div>
-            </div>
+                <Grid className={classes.content}>
+                    <Typography variant='display1'>
+                        This Website is still under construction. But you are more then welcome to checkout the About page for more details.
+                    </Typography>
+                </Grid>
+            </Grid>
         );
     }
 }

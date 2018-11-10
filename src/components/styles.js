@@ -27,12 +27,13 @@ export const styles = theme => ({
         textDecoration: 'none'
     },
     profileGitHub: {
-        float: 'right'
+        float: 'right',
+        margin: 5
     },
     spaceBetweenIcons: {
         padding: 7
     },
     listItems: {
-        paddingLeft: 65
+        paddingLeft: 40
     }
 });
