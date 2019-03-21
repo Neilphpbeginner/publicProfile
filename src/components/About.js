@@ -10,7 +10,6 @@ import MetaTags from "react-meta-tags";
 const bgColor = {
     primary: '#103452',
     secondary: '#FFFFFF'
-
 }
 
 class About extends Component {
@@ -124,10 +123,8 @@ class About extends Component {
                     <div>
                         <Typography variant='inherit' className={classes.listItems}>
                             Babcock Ntuthuko Generations (Head Office, Bedfordview)
-                            </Typography>
-                        <Typography variant='body2'>
                             Administrator Site, July 2007 to Present
-                            </Typography>
+                        </Typography>
                     </div>
 
 
