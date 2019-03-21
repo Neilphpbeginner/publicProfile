@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import NavBar from "./NavBar";
 import Icon from './Icon';
 import { Typography, SvgIcon, List, ListItem, Grid } from "@material-ui/core";
+import MetaTags from "react-meta-tags";
 
 const bgColor = {
     primary: '#103452',
@@ -18,6 +19,9 @@ class About extends Component {
         const { classes } = this.props;
         return (
             <Grid className={classes.root}>
+                <MetaTags>
+                    <title>Neil Lemmer's Web Portfolio/About</title>
+                </MetaTags>
                 <NavBar />
                 <Grid className={classes.content}>
                     <Typography variant='display1' color='primary' className={classes.cvHeading}>

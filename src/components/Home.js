@@ -4,12 +4,16 @@ import { styles } from "./styles";
 import Proptypes from "prop-types";
 import NavBar from "./NavBar";
 import { Grid, Typography } from "@material-ui/core";
-
+import MetaTags from "react-meta-tags";
 class Home extends Component {
     render() {
+
         const { classes } = this.props;
         return (
             <Grid className={classes.root}>
+                <MetaTags>
+                    <title>Neil Lemmer's Web Portfolio</title>
+                </MetaTags>
                 <NavBar />
                 <Grid className={classes.content}>
                     <Typography variant='display1'>

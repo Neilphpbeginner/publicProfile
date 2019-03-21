@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import {
     AppBar,
     Toolbar,
-    Paper,
     Typography,
     Drawer,
     MenuList,
